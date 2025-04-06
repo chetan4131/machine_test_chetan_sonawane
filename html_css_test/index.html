@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <section class="container-fluid">
+            <div class="row">
+                <div
+                    class="col-12 col-lg-1 question-section rounded-bottom-3 d-flex d-lg-block justify-content-between text-lg-center text-white py-3 p-lg-0 ">
+                    <div class="my-lg-4">
+                        <p class="fs-5 m-0">Question</p>
+                    </div>
+                    <div><p class="fs-5 fw-semibold m-0">01/02</p></div>
+                </div>
+                <div class="col-12 col-lg-11 p-0 ps-lg-3">
+                    <div class="question-statement px-3 pt-2 pb-3 rounded-bottom-3">
+                        <P>Below are the three options on how to respond to the scenario above. Image question the
+                            client side pings you and tells that they have a personal emergency and will need to be away
+                            from work. </P>
+
+                        <p class="m-0">You will ... </p>
+                    </div>
+                    <div>
+                        <p class="note">Below are the three options on how to respond to the scenario above.
+                            Please choose the response that resonates most with you and click <strong>Next</strong> to
+                            Proceed. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cards-group">
+            <div class="row justify-content-center justify-content-lg-around gap-4 gap-lg-0 ms-lg-5 my-4 ps-lg-5">
+                
+                <div class="card px-3 pt-3 pb-0 col-12 col-lg-3 col-md-4 col-6 border-0" style="width: 12rem;">
+                    <img src="./images/iron-man.jpg" class="card-img-top rounded"
+                        alt="iron-man">
+                    <div class="card-body p-0 m-2 text-center d-flex justify-content-center align-items-center">
+                        <input type="radio" name="e" class="square">
+                    </div>
+                </div>
+                
+                <div class="card px-3 pt-3 pb-0 col-12 col-lg-3 col-md-4 col-6 border-0" style="width: 12rem;">
+                    <img src="./images/Complex_eLearning.png" class="card-img-top rounded" alt="...">
+                    <div class="card-body p-0 m-2 text-center d-flex justify-content-center align-items-center">
+                        <input type="radio" name="e" class="square">
+                    </div>
+                </div>
+                
+                <div class="card px-3 pt-3 pb-0 col-12 col-lg-3 col-md-4 col-6 border-0" style="width: 12rem;">
+                    <img src="./images/ELearning.png" class="card-img-top rounded" alt="e-learning">
+                    <div class="card-body p-0 m-2 text-center d-flex justify-content-center align-items-center">
+                        <input type="radio" name="e" class="square">
+                    </div>
+                </div>
+                
+                <div class="card px-3 pt-3 pb-0 col-12 col-lg-3 col-md-4 col-6 border-0" style="width: 12rem;">
+                    <img src="./images/Medium_Complexity_E_Learning.png" class="card-img-top rounded"
+                        alt="Medium_Complexity_E_Learning">
+                    <div class="card-body p-0 m-2 text-center d-flex justify-content-center align-items-center">
+                        <input type="radio" name="e" class="square">
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <div class="text-center my-4">
+           
+            <button class="custom-button col-10 col-sm-3 col-md-3 col-lg-2" disabled>Submit</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const radios = document.querySelectorAll('input[type="radio"]');
+        const submitBtn = document.querySelector('.custom-button');
+      
+        radios.forEach(radio => {
+          radio.addEventListener('change', () => {
+            submitBtn.removeAttribute('disabled');
+          });
+        });
+      </script>
+      
+</body>
+
+</html>
